@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sally Student Resume</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Alata|Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="application-root">
+
+  </div>
+    
+  <script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+
+<script type="text/babel">
+  function App(props) {
+  return (
+    <main>
+      {props.children}
+    </main>
+  );
+}
+
+// Nested elements inside the App
+ReactDOM.render(
+  <App className='my-class'>
+    <header>
+    <h1 id="header">Sally Student</h1>
+    <h3 className="content">Resourceful, adaptable, and multitalented creative professional, offering solid experience and impressive academic achievements in design across multiple media sectors. Highly talented at developing exceptional website, marketing, print, and animation creations utilizing cutting-edge tools and technology. Builds exceptional rapport with clients, coordinating graphical, and design improvements that consistently meet customers' needs. Excels in a team or solo environment, adhering to budgets, and deadlines. </h3>
+    </header>
+    <section>
+   <h4 className="subheader">Education</h4> 
+   <ul className="content">
+   <li><strong>Bachelors in Science Graphic Design</strong> from Troy University 2018</li>
+   <li>Associates in Design Gulf Coast State College 2015</li>
+   </ul>
+    </section>
+    <section>
+      <h4 className="subheader">Employment</h4>
+      
+      <p className="content"><strong>CBO PLATINUM PROMOTIONS, Technical Assistant</strong> - (Location), Jan 2019 - Present
+      Delivers technical support in the creation of websites, while serving as a contractor for graphic designs.</p>
+
+      <p className="content"><strong>TROY UNIVERSITY, Design Intern</strong> - Troy, AL, Jan 2016 - Dec 2017
+      Managed equipment setup, maintenance, repairs of printers utilized for commercial projects, and created marketing materials for clients. Developed a diverse set of products used in productions. Adhered to all budget constraints for materials, labor, and supplies.</p>
+
+      <p className="content"><strong>TROY UNIVERSITY, Maya Designer</strong>, Guilderfluke Programmer - Troy, AL, Aug 2016 - Dec 2017
+      Gained invaluable hands-on experience in developing animations of scenes for educational videos, and lighting programming innovation for gallery spaces. Assisted in the development of a 3D design class.</p> 
+
+      <p className="content"><strong>SKOPELOS ART FOUNDATION, Design Intern</strong> - Greece, (Dates)
+      Integral participant in the creation of the first ceramic symposium at Gulf Coast State College.</p>
+    </section>
+    <section>
+    <h4 className="subheader">Contact Info</h4>
+
+      <img id="image" src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" />
+    <address id="address">
+      <p>Email us at: <a href="mailto:orvisuals@gmail.com">Orvisuals</a></p>
+      <p>Call us at: (334) XXX-XXXX</p>
+
+    </address>
+  </section> 
+  </App>,
+  document.querySelector('#application-root')
+);
+</script>
+</body>
+</html>
